@@ -14,9 +14,9 @@ class TestSnakeGame(TestCase):
 
         self.assertEqual(game.get_food_position(), (5,5))
 
-    def test_snake_facing_north_moves_up_one_block(self):
-        game = SnakeGame([(1, 1), (1, 2), (1, 3)], (5, 5), 25)
+    def test_snake_facing_south_moves_up_one_block(self):
+        game = SnakeGame([(5, 5), (5, 4), (5, 3)], (5, 2), 25)
 
         game.tick()
 
-        self.assertEqual(game.get_snake_positions(), [(1, 2), (1, 1), (1, 2)])
+        self.assertEqual(game.get_head_position(), (5, 6))

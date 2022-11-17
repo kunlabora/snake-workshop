@@ -25,5 +25,8 @@ class SnakeGame():
     def is_snake_dead(self):
         return False
 
+    def get_head_position(self):
+        return self.snake_positions[0]
+
     def tick(self):
         pass
