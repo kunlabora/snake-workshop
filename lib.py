@@ -74,7 +74,7 @@ class SnakeRunner:
         elif (event.keysym == "Right"):
             self.game.turn_snake_east()
         elif (event.keysym == "Down"):
-            self.game.turn_snake_east()
+            self.game.turn_snake_south()
         elif (event.keysym == "Left"):
             self.game.turn_snake_west()
 
